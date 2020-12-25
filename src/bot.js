@@ -17,7 +17,7 @@ client.on('ready', () =>
 client.on('message', async (message) =>
 {
   if (message.author.bot) return;
-  if (message.content === "hello")
+  if (message.content.toLowerCase() === "hello" || message.content.toLowerCase() === "hi")
     return message.reply('hi lol');
   if (message.content.startsWith(PREFIX)) 
   {
